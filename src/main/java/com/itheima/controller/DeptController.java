@@ -16,15 +16,13 @@ import java.util.logging.Logger;
 @RestController
 @RequestMapping("/depts")
 public class DeptController {
+    /////////////////////////////
 
-    //定义日志记录对象
-    //private static Logger log = (Logger) LoggerFactory.getLogger(DeptController.class);
+
 
     @Autowired
     private DeptService deptService;
 
-    //指定请求方式为 GET
-    //@RequestMapping(value = "/depts", method = RequestMethod.GET)
     @GetMapping
     public Result selectAll(){
         log.info("查询全部部门数据");

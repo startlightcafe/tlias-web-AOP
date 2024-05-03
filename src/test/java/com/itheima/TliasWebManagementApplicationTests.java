@@ -1,16 +1,9 @@
 package com.itheima;
 
-import com.itheima.mapper.DeptMapper;
-import com.itheima.mapper.EmpMapper;
-import com.itheima.pojo.Dept;
-import com.itheima.pojo.Emp;
-import com.itheima.service.DeptService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
-import org.apache.ibatis.annotations.Param;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.*;
