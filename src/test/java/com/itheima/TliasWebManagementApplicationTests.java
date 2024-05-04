@@ -1,5 +1,6 @@
 package com.itheima;
 
+import com.itheima.pojo.Dept;
 import com.itheima.service.DeptService;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -19,8 +20,10 @@ class TliasWebManagementApplicationTests {
 
     @Test
     public void testExe(){
-        deptService.selectAll();
+        List<Dept> res = deptService.selectAll();
 
-        deptService.deleteById(66);
+        System.out.println("返回值:" + res);
+
+        //deptService.deleteById(66);
     }
 }
