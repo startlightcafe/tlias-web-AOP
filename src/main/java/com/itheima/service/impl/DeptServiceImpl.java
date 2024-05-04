@@ -1,5 +1,6 @@
 package com.itheima.service.impl;
 
+import com.itheima.aop.MyLog;
 import com.itheima.mapper.DeptMapper;
 import com.itheima.pojo.Dept;
 import com.itheima.service.DeptService;
@@ -14,11 +15,13 @@ public class DeptServiceImpl implements DeptService {
     @Autowired
     private DeptMapper deptMapper;
 
+    @MyLog
     @Override
     public List<Dept> selectAll() {
         return deptMapper.selectAll();
     }
 
+    @MyLog
     @Override
     public void deleteById(Integer id) {
         deptMapper.deleteById(id);
